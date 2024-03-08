@@ -1,1 +1,3 @@
-# Lab2
+# My Name
+##Student ID: <26827>
+## Group Number: <17>
