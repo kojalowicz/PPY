@@ -70,6 +70,7 @@ Extend the previous Python program to include tuples. Now, in addition to creati
   ```
 """
 
+
 # Input
 input_numbers = input("Enter a series of space-separated integers: ")
 
