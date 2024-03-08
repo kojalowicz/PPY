@@ -66,7 +66,7 @@ Extend the previous Python program to include tuples. Now, in addition to creati
   Enter a series of space-separated integers: 5 2 8 1 9
 
   Sorted list: [1, 2, 5, 8, 9]
-  Sorted tuple: (1, 2, 5, 8, 9)
+  Sorted tuple: (1, 2, 5, 8, 9)   
   ```
 """
 
