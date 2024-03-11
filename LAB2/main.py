@@ -31,10 +31,10 @@ Write a Python program that takes input from the user to create a list of intege
 input_numbers = input("Enter a series of space-separated integers: ")
 
 # Convert Input:
-
+integer_list = [int(x) for x in input_numbers.split()]
 
 # Sorting:
-
+numbers_list = sorted(integer_list)
 
 # Print Output
 print("Sorted list:", numbers_list)
@@ -71,7 +71,7 @@ Extend the previous Python program to include tuples. Now, in addition to creati
 """
 
 # Input
-input_numbers = input("Enter a series of space-separated integers: ")
+# input_numbers = input("Enter a series of space-separated integers: ")
 
 # Convert Input:
 
@@ -80,8 +80,8 @@ input_numbers = input("Enter a series of space-separated integers: ")
 
 
 # Print Output
-print("Sorted list:", numbers_list)
-print("Sorted tuple:", sorted_tuple)
+# print("Sorted list:", numbers_list)
+# print("Sorted tuple:", sorted_tuple)
 
 """5.
 Extend the previous Python program to demonstrate the manipulation of lists using the append(), insert(), and remove() functions, and to emphasize the immutability of tuples.
@@ -107,7 +107,7 @@ Extend the previous Python program to demonstrate the manipulation of lists usin
 """
 
 # Input
-input_numbers = input("Enter a series of space-separated integers: ")
+# input_numbers = input("Enter a series of space-separated integers: ")
 
 # Convert Input
 
@@ -118,22 +118,22 @@ input_numbers = input("Enter a series of space-separated integers: ")
 #   Remove one elementfrom the list
 
 # Attempt to Modify Tuple (this will raise an error)
-try:
-    #   Append 10 to the tuple
-except AttributeError:
-    print("Tuples are immutable and cannot be modified.")
-try:
-    #   Insert 20 at index 2
-except AttributeError:
-    pass  # Insert operation will also raise an error
-try:
-    #   Remove one element  from the tuple
-except AttributeError:
-    pass  # Remove operation will also raise an error
-
-# Print Output
-print("Modified list:", numbers_list)
-print("Tuple remains unchanged:", numbers_tuple)
+# try:
+#     #   Append 10 to the tuple
+# except AttributeError:
+#     print("Tuples are immutable and cannot be modified.")
+# try:
+#     #   Insert 20 at index 2
+# except AttributeError:
+#     pass  # Insert operation will also raise an error
+# try:
+#     #   Remove one element  from the tuple
+# except AttributeError:
+#     pass  # Remove operation will also raise an error
+#
+# # Print Output
+# print("Modified list:", numbers_list)
+# print("Tuple remains unchanged:", numbers_tuple)
 
 """--------------------------------------------------------------------------------
 1. **Set**:
@@ -191,7 +191,7 @@ Additionally, introduce sets and dictionaries and perform basic operations on th
 """
 
 # Input
-input_numbers = input("Enter a series of space-separated integers: ")
+# input_numbers = input("Enter a series of space-separated integers: ")
 
 # Convert Input
 
@@ -201,10 +201,10 @@ input_numbers = input("Enter a series of space-separated integers: ")
 # Remove the element 8
 
 # Attempt to Modify Tuple (this will raise an error)
-try:
-    # Append 10 to the tuple
-except AttributeError:
-    print("Tuples are immutable and cannot be modified.")
+# try:
+#     # Append 10 to the tuple
+# except AttributeError:
+#     print("Tuples are immutable and cannot be modified.")
 
 # Set Operations
 # Union
@@ -212,17 +212,17 @@ except AttributeError:
 # Difference
 
 # Dictionary Operations
-print("Original Dictionary:", numbers_dict)
+# print("Original Dictionary:", numbers_dict)
 # Add a new key-value pair
 # Delete an existing key-value pair
 
 # Print Output
-print("Modified list:", numbers_list)
-print("Tuple remains unchanged:", numbers_tuple)
-print("Union of set:", set_union)
-print("Intersection of set:", set_intersection)
-print("Difference of set:", set_difference)
-print("Updated Dictionary:", numbers_dict)
+# print("Modified list:", numbers_list)
+# print("Tuple remains unchanged:", numbers_tuple)
+# print("Union of set:", set_union)
+# print("Intersection of set:", set_intersection)
+# print("Difference of set:", set_difference)
+# print("Updated Dictionary:", numbers_dict)
 
 """7. **Built-in Types and Type Conversion**
 
@@ -266,7 +266,7 @@ print("Updated Dictionary:", numbers_dict)
 """
 
 # Input
-input_numbers = input("Enter a series of space-separated integers: ")
+# input_numbers = input("Enter a series of space-separated integers: ")
 
 # Convert Input
 
@@ -277,7 +277,7 @@ input_numbers = input("Enter a series of space-separated integers: ")
 # Set Operations
 
 # Dictionary Operations
-print("Original Dictionary:", numbers_dict)
+# print("Original Dictionary:", numbers_dict)
 # Add a new key-value pair
 # Delete an existing key-value pair
 
@@ -296,18 +296,18 @@ print("Original Dictionary:", numbers_dict)
 # dict_to_set =
 
 # Print Output
-print("List to Tuple:", list_to_tuple)
-print("List to Set:", list_to_set)
-print("List to Dictionary:", list_to_dict)
-print("Tuple to List:", tuple_to_list)
-print("Tuple to Set:", tuple_to_set)
-print("Tuple to Dictionary:", tuple_to_dict)
-print("Set to List:", set_to_list)
-print("Set to Tuple:", set_to_tuple)
-print("Set to Dictionary:", set_to_dict)
-print("Dictionary to List:", dict_to_list)
-print("Dictionary to Tuple:", dict_to_tuple)
-print("Dictionary to Set:", dict_to_set)
+# print("List to Tuple:", list_to_tuple)
+# print("List to Set:", list_to_set)
+# print("List to Dictionary:", list_to_dict)
+# print("Tuple to List:", tuple_to_list)
+# print("Tuple to Set:", tuple_to_set)
+# print("Tuple to Dictionary:", tuple_to_dict)
+# print("Set to List:", set_to_list)
+# print("Set to Tuple:", set_to_tuple)
+# print("Set to Dictionary:", set_to_dict)
+# print("Dictionary to List:", dict_to_list)
+# print("Dictionary to Tuple:", dict_to_tuple)
+# print("Dictionary to Set:", dict_to_set)
 
 """8.
 Extend the previous Python program to write the output to a file and perform operations on that file.
@@ -334,7 +334,7 @@ Extend the previous Python program to write the output to a file and perform ope
 """
 
 # Input
-input_numbers = input("Enter a series of space-separated integers: ")
+# input_numbers = input("Enter a series of space-separated integers: ")
 
 # Convert Input
 
@@ -348,35 +348,35 @@ input_numbers = input("Enter a series of space-separated integers: ")
 
 # Type Conversion
 
-student_number = input("Enter your student number: ")
+# student_number = input("Enter your student number: ")
 
 # Write Output to File like this:
-    "Student Number: " + student_number
-
-    "Original List: " + str(numbers_list)
-    "Original Tuple: " + str(numbers_tuple)
-    "Original Set: " + str(numbers_set)
-    "Original Dictionary: " + str(numbers_dict)
-
-    "Manipulated List: " + str(numbers_list)
-    "Manipulated Tuple: " + str(numbers_tuple)
-    "Union of Set: " + str(set_union)
-    "Intersection of Set: " + str(set_intersection)
-    "Difference of Set: " + str(set_difference)
-    "Updated Dictionary: " + str(numbers_dict)
-
-    "List to Tuple: " + str(list_to_tuple)
-    "List to Set: " + str(list_to_set)
-    "List to Dictionary: " + str(list_to_dict)
-    "Tuple to List: " + str(tuple_to_list)
-    "Tuple to Set: " + str(tuple_to_set)
-    "Tuple to Dictionary: " + str(tuple_to_dict)
-    "Set to List: " + str(set_to_list)
-    "Set to Tuple: " + str(set_to_tuple)
-    "Set to Dictionary: " + str(set_to_dict)
-    "Dictionary to List: " + str(dict_to_list)
-    "Dictionary to Tuple: " + str(dict_to_tuple)
-    "Dictionary to Set: " + str(dict_to_set)
+#     "Student Number: " + student_number
+#
+#     "Original List: " + str(numbers_list)
+#     "Original Tuple: " + str(numbers_tuple)
+#     "Original Set: " + str(numbers_set)
+#     "Original Dictionary: " + str(numbers_dict)
+#
+#     "Manipulated List: " + str(numbers_list)
+#     "Manipulated Tuple: " + str(numbers_tuple)
+#     "Union of Set: " + str(set_union)
+#     "Intersection of Set: " + str(set_intersection)
+#     "Difference of Set: " + str(set_difference)
+#     "Updated Dictionary: " + str(numbers_dict)
+#
+#     "List to Tuple: " + str(list_to_tuple)
+#     "List to Set: " + str(list_to_set)
+#     "List to Dictionary: " + str(list_to_dict)
+#     "Tuple to List: " + str(tuple_to_list)
+#     "Tuple to Set: " + str(tuple_to_set)
+#     "Tuple to Dictionary: " + str(tuple_to_dict)
+#     "Set to List: " + str(set_to_list)
+#     "Set to Tuple: " + str(set_to_tuple)
+#     "Set to Dictionary: " + str(set_to_dict)
+#     "Dictionary to List: " + str(dict_to_list)
+#     "Dictionary to Tuple: " + str(dict_to_tuple)
+#     "Dictionary to Set: " + str(dict_to_set)
 
 # print "Content of the file:"
 
