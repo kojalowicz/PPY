@@ -201,33 +201,56 @@ Additionally, introduce sets and dictionaries and perform basic operations on th
   ```
 """
 
-# Input
+# # Input
 # input_numbers = input("Enter a series of space-separated integers: ")
 
-# Convert Input
+# # Convert Input
+# numbers_list = [int(x) for x in input_numbers.split()]
+# numbers_tuple = tuple(numbers_list)
 
-# Manipulate List
-# Append 10 to the list
-# Insert 20 at index 2
-# Remove the element 8
 
-# Attempt to Modify Tuple (this will raise an error)
+# # Manipulate List
+# # Append 10 to the list
+# numbers_list.append(10)
+
+# # Insert 20 at index 2
+# numbers_list.insert(2,20)
+
+# # Remove the element 8
+# numbers_list.remove(8)
+
+# # Attempt to Modify Tuple (this will raise an error)
 # try:
 #     # Append 10 to the tuple
+#     numbers_tuple.append(10)
 # except AttributeError:
 #     print("Tuples are immutable and cannot be modified.")
 
-# Set Operations
-# Union
-# Intersection
-# Difference
+# # Set Operations
+# numbers_set = set(numbers_list)
+# other_set = {11, 12, 8}
 
-# Dictionary Operations
+# # Union
+# set_union = numbers_set.union(other_set)
+
+# # Intersection
+# set_intersection = numbers_set.intersection(other_set)
+
+# # Difference
+# set_difference = numbers_set.difference(other_set)
+
+# # Dictionary Operations
+# numbers_dict = {x: x**2 for x in numbers_list}
+
 # print("Original Dictionary:", numbers_dict)
-# Add a new key-value pair
-# Delete an existing key-value pair
 
-# Print Output
+# # Add a new key-value pair
+# numbers_dict[11] = 121
+
+# # Delete an existing key-value pair
+# del numbers_dict[8]
+
+# # Print Output
 # print("Modified list:", numbers_list)
 # print("Tuple remains unchanged:", numbers_tuple)
 # print("Union of set:", set_union)
