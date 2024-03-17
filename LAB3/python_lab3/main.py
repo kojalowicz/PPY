@@ -9,3 +9,8 @@ def e_squares(start, end):
 
 print(e_squares(3, 15))
 
+# 3 Task
+class SquareGenerator:
+    @staticmethod
+    def e_squares(start, end):
+        return [x ** 2 for x in range(start, end)]
