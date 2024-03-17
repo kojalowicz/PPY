@@ -31,3 +31,10 @@ from task_07.square_generator import SquareGenerator
 print(SquareGenerator.e_squares(6, 9))
 
 
+# 8 Task
+class CubicGenerator(SquareGenerator):
+    @staticmethod
+    def e_cubes(start, end):
+        if start > end:
+            raise ValueError("")
+        return [a ** 3 for a in range(start, end)]
