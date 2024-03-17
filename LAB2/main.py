@@ -109,34 +109,36 @@ Extend the previous Python program to demonstrate the manipulation of lists usin
   ```
 """
 
-# # Input
-# input_numbers = input("Enter a series of space-separated integers: ")
-#
-# # Convert Input
-#
-#
-# # Manipulate List
-# #   Append 10 to the list
-# #   Insert 20 at index 2
-# #   Remove one elementfrom the list
-#
-# # Attempt to Modify Tuple (this will raise an error)
-# try:
-#     #   Append 10 to the tuple
-# except AttributeError:
-#     print("Tuples are immutable and cannot be modified.")
-# try:
-#     #   Insert 20 at index 2
-# except AttributeError:
-#     pass  # Insert operation will also raise an error
-# try:
-#     #   Remove one element  from the tuple
-# except AttributeError:
-#     pass  # Remove operation will also raise an error
-#
-# # Print Output
-# print("Modified list:", numbers_list)
-# print("Tuple remains unchanged:", numbers_tuple)
+# Input
+input_numbers = input("Enter a series of space-separated integers: ")
+
+# Convert Input
+numbers_list = [int(number) for number in input_numbers.split()]
+numbers_tuple = tuple(numbers_list)
+
+# Manipulate List
+numbers_list.append(10)  # Append 10 to the list
+numbers_list.insert(2, 20)  # Insert 20 at index 2
+numbers_list.remove(numbers_list[0])  # Remove the first element from the list
+
+# Attempt to Modify Tuple (this will raise an error)
+try:
+    numbers_tuple.append(10)  # Attempt to append 10 to the tuple
+except AttributeError:
+    print("Tuples are immutable and cannot be modified with append().")
+try:
+    numbers_tuple.insert(2, 20)  # Attempt to insert 20 at index 2 of the tuple
+except AttributeError:
+    print("Tuples are immutable and cannot be modified with insert().")
+try:
+    numbers_tuple.remove(numbers_tuple[0])  # Attempt to remove an element from the tuple
+except AttributeError:
+    print("Tuples are immutable and cannot be modified with remove().")
+
+# Print Output
+print("Modified list:", numbers_list)
+print("Tuple remains unchanged:", numbers_tuple)
+
 
 """--------------------------------------------------------------------------------
 1. **Set**:
