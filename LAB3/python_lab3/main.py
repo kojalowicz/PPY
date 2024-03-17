@@ -26,7 +26,7 @@ print(l2)
 
 # 6 Task
 
-from square_generator import SquareGenerator
+from task_07.square_generator import SquareGenerator
 
 print(SquareGenerator.e_squares(6, 9))
 
