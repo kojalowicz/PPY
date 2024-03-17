@@ -22,3 +22,11 @@ l1 = SquareGenerator.e_squares(1, 11)
 l2 = [math.pow(x, 2) for x in l1]
 
 print(l2)
+
+# 5 Task
+class SquareGenerator:
+    @staticmethod
+    def e_squares(start, end):
+        if start > end:
+            raise ValueError("")
+        return [a** 2 for a in range(start, end)]
