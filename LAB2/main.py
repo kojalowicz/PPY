@@ -195,39 +195,55 @@ Additionally, introduce sets and dictionaries and perform basic operations on th
   ```
 """
 
-# # Input
-# input_numbers = input("Enter a series of space-separated integers: ")
-#
-# # Convert Input
-#
-# # Manipulate List
-# # Append 10 to the list
-# # Insert 20 at index 2
-# # Remove the element 8
-#
-# # Attempt to Modify Tuple (this will raise an error)
-# try:
-#     # Append 10 to the tuple
-# except AttributeError:
-#     print("Tuples are immutable and cannot be modified.")
-#
-# # Set Operations
-# # Union
-# # Intersection
-# # Difference
-#
-# # Dictionary Operations
-# print("Original Dictionary:", numbers_dict)
-# # Add a new key-value pair
-# # Delete an existing key-value pair
-#
-# # Print Output
-# print("Modified list:", numbers_list)
-# print("Tuple remains unchanged:", numbers_tuple)
-# print("Union of set:", set_union)
-# print("Intersection of set:", set_intersection)
-# print("Difference of set:", set_difference)
-# print("Updated Dictionary:", numbers_dict)
+# Input
+input_numbers = input("Enter a series of space-separated integers: ")
+
+# Convert Input
+numbers_list = list(map(int, input_numbers.split()))
+numbers_tuple = tuple(numbers_list)
+
+# Manipulate List
+# Append 10 to the list
+numbers_list.append(10)
+# Insert 20 at index 2
+numbers_list.insert(2, 20)
+# Remove the element 8
+if 8 in numbers_list:
+    numbers_list.remove(8)
+
+# Attempt to Modify Tuple (this will raise an error)
+try:
+    # Append 10 to the tuple
+    numbers_tuple.append(10)
+except AttributeError:
+    print("Tuples are immutable and cannot be modified.")
+
+# Set Operations
+numbers_set1 = set(numbers_list)
+numbers_set2 = {10, 11, 12, 5, 8}
+# Union
+set_union = numbers_set1.union(numbers_set2)
+# Intersection
+set_intersection = numbers_set1.intersection(numbers_set2)
+# Difference
+set_difference = numbers_set1.difference(numbers_set2)
+
+# Dictionary Operations
+numbers_dict = {num: num**2 for num in numbers_list}
+print("Original Dictionary:", numbers_dict)
+# Add a new key-value pair
+numbers_dict[11] = 121
+# Delete an existing key-value pair
+if 8 in numbers_dict:
+    del numbers_dict[8]
+
+# Print Output
+print("Modified list:", numbers_list)
+print("Tuple remains unchanged:", numbers_tuple)
+print("Union of set:", set_union)
+print("Intersection of set:", set_intersection)
+print("Difference of set:", set_difference)
+print("Updated Dictionary:", numbers_dict)
 
 """7. **Built-in Types and Type Conversion**
 
