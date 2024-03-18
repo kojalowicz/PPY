@@ -38,3 +38,11 @@ class CubicGenerator(SquareGenerator):
         if start > end:
             raise ValueError("")
         return [a ** 3 for a in range(start, end)]
+
+# 9 Task
+class CubicGenerator(SquareGenerator):
+    @staticmethod
+    def e_squares(start, end):
+        if start > end:
+            raise ValueError("")
+        return [a ** 2 for a in range(start, end)]
