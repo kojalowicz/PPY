@@ -66,8 +66,17 @@
 # print(square_roots_list)
 
 # TASK 6
-from square_generator import SquareGenerator
+# from square_generator import SquareGenerator
 
+# square_gen = SquareGenerator()
+# squares_list = square_gen.generate_squares(3, 7)
+# square_roots_list = square_gen.calculate_square_roots(squares_list)
+# print(squares_list)
+# print(square_roots_list)
+
+# TASK 7
+from square_package.square_generator import SquareGenerator
+ 
 square_gen = SquareGenerator()
 squares_list = square_gen.generate_squares(3, 7)
 square_roots_list = square_gen.calculate_square_roots(squares_list)
