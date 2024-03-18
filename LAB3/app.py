@@ -4,15 +4,26 @@
 # print(squares)
 
 # TASK 2
-def generate_squares(start, end):
-    squares = [x**2 for x in range(start, end + 1)]
-    return squares
+# def generate_squares(start, end):
+#     squares = [x**2 for x in range(start, end + 1)]
+#     return squares
 
-# Example usage of the function
-start_num = 1
-end_num = 15
-squares_list = generate_squares(start_num, end_num)
+# # Example usage of the function
+# start_num = 1
+# end_num = 15
+# squares_list = generate_squares(start_num, end_num)
 
-print(f"List of squares of numbers from {start_num} to {end_num}:")
+# print(f"List of squares of numbers from {start_num} to {end_num}:")
+# print(squares_list)
+
+# TASK 3
+class SquareGenerator:
+    def generate_squares(self, start, end):
+        squares = [x**2 for x in range(start, end + 1)]
+        return squares
+    
+# Example usage of the class and its method
+square_gen = SquareGenerator()
+squares_list = square_gen.generate_squares(3, 8)
 print(squares_list)
-
+    
