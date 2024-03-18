@@ -1,4 +1,5 @@
 import math
+
 class SquareGenerator:
     def generate_squares(self, start, end):
         if end < start:

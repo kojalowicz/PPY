@@ -84,9 +84,17 @@
 # print(square_roots_list)
 
 # TASK 8
+# from square_package.cubic_generator import CubicGenerator
+# cubic_gen = CubicGenerator()
+
+# # Generate cubes
+# cubes_list = cubic_gen.generate_cubes(4, 7)
+# print(cubes_list)
+
+# TASK 9
 from square_package.cubic_generator import CubicGenerator
 cubic_gen = CubicGenerator()
 
 # Generate cubes
-cubes_list = cubic_gen.generate_cubes(4, 7)
+cubes_list = cubic_gen.generate_squares(7, 4)
 print(cubes_list)
