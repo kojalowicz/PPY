@@ -28,9 +28,29 @@
 # print(squares_list)
     
 # TASK 4
+# import math
+# class SquareGenerator:
+#     def generate_squares(self, start, end):
+#         squares = [x**2 for x in range(start, end + 1)]
+#         return squares
+    
+#     def calculate_square_roots(self, numbers):
+#         square_roots = [math.sqrt(num) for num in numbers]
+#         return square_roots
+    
+# # Example usage of the class and its method
+# square_gen = SquareGenerator()
+# squares_list = square_gen.generate_squares(3, 8)
+# square_roots_list = square_gen.calculate_square_roots(squares_list)
+# print(squares_list)
+# print(square_roots_list)
+
+# TASK 5
 import math
 class SquareGenerator:
     def generate_squares(self, start, end):
+        if end < start:
+            print("End of the range must be greater than or equal to the start.")
         squares = [x**2 for x in range(start, end + 1)]
         return squares
     
@@ -40,7 +60,7 @@ class SquareGenerator:
     
 # Example usage of the class and its method
 square_gen = SquareGenerator()
-squares_list = square_gen.generate_squares(3, 8)
+squares_list = square_gen.generate_squares(8, 3)
 square_roots_list = square_gen.calculate_square_roots(squares_list)
 print(squares_list)
 print(square_roots_list)
